@@ -1,0 +1,12 @@
+{
+  "name": "riskified",
+  "description": "Riskified developer tools for Claude Code — automates beacon fraud-detection integration into merchant storefronts",
+  "version": "1.0.0",
+  "author": {
+    "name": "Riskified",
+    "url": "https://www.riskified.com"
+  },
+  "homepage": "https://github.com/Riskified/beacon-agent",
+  "repository": "https://github.com/Riskified/beacon-agent",
+  "license": "MIT"
+}
