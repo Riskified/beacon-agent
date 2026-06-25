@@ -1,0 +1,29 @@
+name: aws-accounts-management-us-east-1-ecr
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - '.infrastructure/terraform/aws/accounts/management/us-east-1/ecr/**'
+  pull_request:
+    branches:
+      - main
+      - master
+    paths:
+      - '.infrastructure/terraform/aws/accounts/management/us-east-1/ecr/**'
+jobs:
+  terraform:
+    uses: Riskified/github-actions-workflows/.github/workflows/terraform-apply-aws-github-oidc.yml@main
+    permissions:
+      id-token: write
+      contents: read
+      pull-requests: write
+    with:
+      path: '.infrastructure/terraform/aws/accounts/management/us-east-1/ecr'
+      role_arn: 'arn:aws:iam::284309667046:role/github-actions-role'
+      args: >
+        -var="profile="
+    secrets:
+      gh_token: ${{ secrets.GITHUB_TOKEN }}
+      gh_ssh_private_key: ${{ secrets.GH_SSH_PRIVATE_KEY }}
