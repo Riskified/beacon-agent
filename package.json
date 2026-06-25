@@ -1,0 +1,28 @@
+{
+  "name": "@riskified/beacon-agent",
+  "version": "1.0.0",
+  "description": "Claude Code plugin — inject and verify the Riskified fraud-detection beacon into any storefront",
+  "keywords": [
+    "claude-plugin",
+    "claude-command",
+    "riskified",
+    "beacon",
+    "fraud-detection",
+    "ecommerce"
+  ],
+  "author": "Riskified <dev@riskified.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riskified/beacon-agent.git"
+  },
+  "homepage": "https://github.com/riskified/beacon-agent#readme",
+  "files": [
+    "beacon-integrate.md",
+    "install.sh",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16"
+  }
+}
